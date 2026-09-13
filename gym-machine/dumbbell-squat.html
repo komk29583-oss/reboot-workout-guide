@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>試作品</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <!-- メニューボタン -->
+<button class="menu-button" id="menu-button">
+    ☰
+</button>
+
+<!-- サイドメニュー -->
+<nav class="side-menu" id="side-menu">
+    
+    
+
+    <h2>マシンを選択</h2>
+
+    <h3>ダンベル</h3>
+
+<a href="dumbbell-curl.html" class="machine-button">
+    ダンベルカール
+</a>
+
+<a href="dumbbell-shoulder-press.html" class="machine-button">
+    ダンベルショルダープレス
+</a>
+
+<a href="dumbbell-fly.html" class="machine-button">
+    ダンベルフライ
+</a>
+
+<a href="side-raise.html" class="machine-button">
+    サイドレイズ
+</a>
+
+<a href="front-raise.html" class="machine-button">
+    フロントレイズ
+</a>
+
+<a href="one-hand-row.html" class="machine-button">
+    ワンハンドロー
+</a>
+
+<a href="dumbbell-squat.html" class="machine-button">
+    ダンベルスクワット
+</a>
+<h3>ベンチ</h3>
+
+<a href="bench-press.html" class="machine-button">
+    ベンチプレス
+</a>
+
+<a href="incline-bench-press.html" class="machine-button">
+    インクラインベンチプレス
+</a>
+
+<a href="decline-bench-press.html" class="machine-button">
+    デクラインベンチプレス
+</a>
+
+<a href="dumbbell-bench-press.html" class="machine-button">
+    ダンベルベンチプレス
+</a>
+</nav>
+
+    <main class="container">
+
+        <!-- ロゴ -->
+        <header class="logo">
+            <div class="logo-name">Re:boot</div>
+            <div class="logo-sub">workout studio</div>
+        </header>
+
+
+        <!-- マシーン名 -->
+        <section class="machine-title">
+
+            <h1>DUMBBELL SQUAT</h1>
+<p>ダンベルスクアット</p>
+
+        </section>
+
+
+        <!-- 動画 -->
+        <section class="video-box">
+
+    <video controls playsinline webkit-playsinline>
+        <source src="" type="video/mp4">
+        お使いのブラウザでは動画を再生できません。
+    </video>
+
+</section>
+
+
+        <!-- 使い方 -->
+        <section class="section">
+
+            <h2>HOW TO USE</h2>
+
+            <ol class="steps">
+
+                <li>① シートの位置を調整します</li>
+
+                <li>② 足をプレートにセットします</li>
+
+                <li>③ ゆっくり動かします</li>
+
+            </ol>
+
+        </section>
+
+
+        <!-- 注意事項 -->
+        <section class="section">
+
+            <h2>⚠ 注意事項</h2>
+
+            <div class="warning">
+
+                使用前にマシーンの状態を確認してください。
+
+            </div>
+
+        </section>
+
+    </main>
+    <script>
+
+  const menuButton = document.getElementById("menu-button");
+const sideMenu = document.getElementById("side-menu");
+
+menuButton.addEventListener("click", function () {
+
+    sideMenu.classList.toggle("open");
+
+});
+
+    
+
+</script>
+
+</body>
+
+</html>
