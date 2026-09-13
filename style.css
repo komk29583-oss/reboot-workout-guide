@@ -183,8 +183,8 @@ body {
 .side-menu {
     position: fixed;
     top: 0;
-    right: -300px;
-    width: 300px;
+    right: -280px;
+    width: 280px;
     height: 100vh;
 
     background-color: #111111;
@@ -526,7 +526,7 @@ body {
 
 .part-name {
     margin-left: 10px;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .arrow {
@@ -590,6 +590,7 @@ body {
     position: relative;
     align-self: start;
     z-index: 1;
+    
 }
 
 .body-part.open {
@@ -619,7 +620,7 @@ body {
     border-radius: 8px;
     color: #ffffff;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 10px;
 }
 #search-results {
     padding: 10px 0;
