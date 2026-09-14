@@ -183,8 +183,8 @@ body {
 .side-menu {
     position: fixed;
     top: 0;
-    right: -300px;
-    width: 300px;
+    right: -280px;
+    width: 280px;
     height: 100vh;
 
     background-color: #111111;
@@ -437,7 +437,7 @@ body {
 .sidebar-search {
     display: flex;
     gap: 8px;
-    margin-top: 20px;
+    margin-bottom: 10px;
     padding-top: 15px;
     border-top: 1px solid #333333;
 }
@@ -526,7 +526,7 @@ body {
 
 .part-name {
     margin-left: 10px;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .arrow {
@@ -581,40 +581,32 @@ body {
    部位カードの展開
 ========================= */
 
+
+/* =========================
+   部位を開いたときの種目
+========================= */
+
 .body-part {
-    display: block;
-    cursor: pointer;
-    overflow: hidden;
+    position: relative;
     align-self: start;
-    padding: 0;
+    z-index: 1;
+    
 }
 
-.body-part-title {
-    display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
-    min-height: 42px;
-    padding: 0 12px;
-}
-
-.body-part-title .number {
-    flex-shrink: 0;
-}
-
-.body-part-title .part-name {
-    margin-left: 8px;
-    white-space: nowrap;
-    font-size: 13px;
-}
-
-.body-part-title .arrow {
-    margin-left: auto;
-    flex-shrink: 0;
+.body-part.open {
+    z-index: 10;
 }
 
 .exercise-items {
     display: none;
-    padding: 5px 10px 10px 45px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 8px;
+    background-color: #080808;
+    border: 1px solid #333333;
+    border-radius: 0 0 10px 10px;
 }
 
 .body-part.open .exercise-items {
@@ -624,10 +616,30 @@ body {
 .exercise-items a {
     display: block;
     padding: 10px;
-    margin-top: 5px;
     background-color: #111111;
     border-radius: 8px;
     color: #ffffff;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 10px;
 }
+#search-results {
+    padding: 10px 0;
+}
+
+.search-result-item {
+    display: block;
+    padding: 12px;
+    margin-bottom: 6px;
+    background-color: #000000;
+    border: 1px solid #333333;
+    border-radius: 8px;
+
+    color: #ffffff !important;
+    text-decoration: none;
+
+    font-size: 14px;
+}
+.search-result-item:hover {
+    border-color: #E52B18;
+}
+
